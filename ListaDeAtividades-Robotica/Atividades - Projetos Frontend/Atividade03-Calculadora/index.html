@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOS Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <div class="calc">
+        <input class="row" type="text" id="answer" disabled>
+      <div class="FirstBox">
+        <button class="FirstRow"  onclick="clearResult()">AC</button>
+        <button class="FirstRow" onclick="operate('+/-')">+/-</button>
+        <button class="FirstRow" onclick="operate('%')">%</button>
+        <button class="LastSide" onclick="operate('/')">÷</button>
+      </div>
+      <div class="SecondBox">
+        <button class="SecondRow" onclick="operate('7')">7</button>
+        <button class="SecondRow" onclick="operate('8')">8</button>
+        <button class="SecondRow" onclick="operate('9')">9</button>
+        <button class="LastSide" onclick="operate('*')">x</button>
+      </div>
+      <div class=ThirdBox">
+        <button class="ThirdRow" onclick="operate('4')">4</button>
+        <button class="ThirdRow" onclick="operate('5')">5</button>
+        <button class="ThirdRow" onclick="operate('6')">6</button>
+        <button class="LastSide" onclick="operate('-')">-</button>
+      </div>
+      <div class="FourthBox">
+        <button class="FourthRow" onclick="operate('1')">1</button>
+        <button class="FourthRow" onclick="operate('2')">2</button>
+        <button class="FourthRow" onclick="operate('3')">3</button>
+        <button class="LastSide" onclick="operate('+')">+</button>
+      </div>
+      <div class="FifthBox">
+        <button class="FifthRow" id="null" onclick="operate('0')">0</button>
+        <button class="FifthRow" onclick="operate('.')">.</button>
+        <button class="LastSide" onclick="operate('=')">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
